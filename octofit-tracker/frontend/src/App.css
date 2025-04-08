@@ -1,0 +1,94 @@
+/* Updated styles for the OctoFit Tracker app */
+body {
+  background-color: #f0f8ff; /* Alice blue background */
+  font-family: 'Arial', sans-serif;
+  color: #333333; /* Dark gray text color */
+}
+
+h1, h2, h3 {
+  color: #4caf50; /* Green color for headings */
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #4caf50; /* Green navigation menu */
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.table {
+  margin-top: 20px;
+  background-color: #ffffff; /* White table background */
+  border: 1px solid #cccccc; /* Light gray border */
+}
+
+.table th {
+  background-color: #4caf50; /* Green for table headers */
+  color: white;
+}
+
+.table td {
+  color: #333333; /* Dark gray text color */
+}
+
+.btn {
+  margin-right: 5px;
+  color: white;
+  background-color: #4caf50; /* Green for buttons */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-danger {
+  background-color: #f44336; /* Red for danger buttons */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  color: #4caf50;
+}
+
+/* Favicon styling */
+.favicon {
+  width: 32px;
+  height: 32px;
+}
