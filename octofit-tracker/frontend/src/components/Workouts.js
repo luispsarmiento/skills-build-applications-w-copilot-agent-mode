@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Workouts() {
+  const [workouts, setWorkouts] = useState([]);
+
+  useEffect(() => {
+    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/workouts')
+      .then(response => response.json())
+      .then(data => setWorkouts(data));
+  }, []);
+
   return (
     <div className="container mt-4">
       <h1 className="text-center">Workouts</h1>
@@ -13,14 +21,16 @@ function Workouts() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Yoga</td>
-            <td>Relaxing and stretching exercises</td>
-            <td>
-              <button className="btn btn-primary">Edit</button>
-              <button className="btn btn-danger ms-2">Delete</button>
-            </td>
-          </tr>
+          {workouts.map(workout => (
+            <tr key={workout.id}>
+              <td>{workout.name}</td>
+              <td>{workout.description}</td>
+              <td>
+                <button className="btn btn-primary">Edit</button>
+                <button className="btn btn-danger ms-2">Delete</button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
