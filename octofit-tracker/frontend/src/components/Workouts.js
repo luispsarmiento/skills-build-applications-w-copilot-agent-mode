@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/workouts')
+    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

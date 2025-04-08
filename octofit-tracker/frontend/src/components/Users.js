@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/users')
+    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

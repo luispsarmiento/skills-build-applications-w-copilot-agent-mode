@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/activities')
+    fetch('https://reimagined-winner-9656444q4r7fprp9-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
