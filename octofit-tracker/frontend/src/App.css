@@ -1,0 +1,83 @@
+/* Updated styles for the OctoFit Tracker app */
+body {
+  background-color: #e3f2fd; /* Light blue background */
+  font-family: 'Arial', sans-serif;
+  color: #212529; /* Dark text color */
+}
+
+h1 {
+  color: #0d6efd; /* Primary blue color for headings */
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #0d6efd; /* Primary blue */
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #ff0000; /* Bright red color for maximum visibility */
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.table {
+  margin-top: 20px;
+  background-color: #ffffff; /* White table background */
+  border: 1px solid #dee2e6; /* Light border */
+}
+
+.table th {
+  background-color: #0d6efd; /* Primary blue for table headers */
+  color: white;
+}
+
+.table td {
+  color: #212529; /* Dark text color */
+}
+
+.btn {
+  margin-right: 5px;
+  color: white;
+  background-color: #0d6efd; /* Primary blue for buttons */
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red for danger buttons */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: #0d6efd;
+}
